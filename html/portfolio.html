@@ -28,32 +28,22 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/core-styles.css">
-    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
     <link rel="stylesheet" href="/css/dark.css">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-28VKPM9WYH"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-28VKPM9WYH');
-    </script> -->
 
     <script type="text/javascript">
 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'G-28VKPM9WYH']);
-    _gaq.push(['_trackPageview']);
-  
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  
-  </script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'G-28VKPM9WYH']);
+        _gaq.push(['_trackPageview']);
+      
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      
+      </script>
 
     <title>Whidbey Island Electrician | Westside Eelctric | Oak Harbor, WA</title>
 </head>
@@ -91,8 +81,8 @@
                     <a class="logo" href="/index.html"><img aria-hidden="true" src="/images/westside-electrical-logo.svg" alt="compnay logo" height="80"></a>
                     <ul id="on-top" class="navbar-links">
                         <li class="nav-li hover-link"><a href="/index.html">Home</a></li>
-                        <li class="nav-li hover-link"><a href="/html/about.html">About</a></li>
-                        <li class="nav-li hover-link"><a href="/index.html#services">Services</a></li>
+                        <li class="nav-li hover-link"><a class="active-menu" href="/html/about.html">About</a></li>
+                        <li class="nav-li hover-link"><a href="index.html#services">Services</a></li>
                         <!-- <li class="nav-li"><a href="html/portfolio.html">Portfolio</a></li>
                         <li class="nav-li"><a href="html/testimonials.html">Testimonials</a></li> -->
                         <li class="nav-li"><a class="contact-button" href="/html/contact.html">Contact</a></li>
@@ -112,8 +102,8 @@
             <div aria-hidden="true" id="dark"></div>
             <div class="container hero-content">
                 <div class="heroText">
-                    <h1 id="home-h">Contact Westside Electrical</span></h1>
-                    <h2>Thank you for visiting Westside Electrical, please feel free to call or emial any questions you may have regarding your home or buisness.  We respond to every call and message and look forward to hearing from you!</h2>
+                    <h1 id="home-h">See Our Electrical Work Around Oak Harbor</h1>
+                    <h2>Westside Electrical has been providing exceptional customer service and workmanshipwith nearly a decade of experience in the field.  Here’s some of our work to see what we can do.</h2>
                 </div>
             </div>
             <div aria-hidden="true" class="white-clip"></div>
@@ -121,46 +111,20 @@
         </section>
 
         <!-- ============================================ -->
-        <!--                     Form                     -->
+        <!--                  Portfolio                   -->
         <!-- ============================================ -->
-
-        <div id="form-page">
-            <form id="form" name="Contact Form" method="post" data-netlify="true">
     
-                <div class="input-group">
-                    <label for="name">Your First Name</label>
-                    <input id="name" aria-label="name" class="input1" name="name" placeholder="First Name" type="text" tabindex="1" required>
-                </div>
-                <div class="input-group">
-                    <label for="email">Email Address</label>
-                    <input id="email" aria-label="email" class="input1 right" name="email" placeholder="Email Address" type="email" tabindex="2" required>
-                </div>
-                <div class="input-group">
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" aria-label="phone number" class="input1" name="phone" placeholder="Phone Number" type="tel" tabindex="3" required>
-                </div>
-    
-                <div class="input-group">
-                    <label for="hear">How did you hear about us?</label>
-                    <input id="hear" aria-label="how did you hear about us" class="input1 right" name="How did you hear about us?" placeholder="How did you hear about us?" type="text" tabindex="4" required>
-                </div>
-    
-                <label for="message">Message</label>
-                <textarea id="message" aria-label="What do yuo need help with?" name="message" placeholder="What do yuo need help with?" tabindex="5" required></textarea>
-               
-                <p class="form-submit">
-                    <button name="submit" type="submit" id="contact-submit" class="button-solid" data-submit="...Sending">Submit</button>
-                </p>
-            </form>
-        </div>
-
-        <!-- ============================================ -->
-        <!--                    Image                     -->
-        <!-- ============================================ -->
-
-        <div id="image">
-            <span class="dot"></span>
-        </div>
+        <section id="portfolio-page">
+            <div id="grid">
+                <div role="img" class="grid item1"></div>
+                <div role="img" class="grid item2"></div>
+                <div role="img" class="grid item3"></div>
+                <div role="img" class="grid item4"></div>
+                <div role="img" class="grid item5"></div>
+                <div role="img" class="grid item6"></div>
+                <div role="img" class="grid item7"></div>
+            </div>
+        </section>
         
     </main>
 
@@ -225,5 +189,6 @@
     </script>
 
     <script defer src="/app.js"></script>
+    <script defer src="/faq.js"></script>
 </body>
 </html>

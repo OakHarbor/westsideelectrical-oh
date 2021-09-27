@@ -659,6 +659,10 @@
         justify-content: flex-start;
     }
 
+    #about-portfolio .neon {
+        justify-content: center;
+    }
+
     #services .neon {
         justify-content: center;
     }
@@ -687,7 +691,7 @@
         position: absolute;
         left: auto;
         top: 71px;
-        right: 20px;
+        right: 61px;
         z-index: 5000;
     }
 
@@ -857,7 +861,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     .top-dark-mode-button {
         right: auto;
         left: 50%;
-        margin-left: 600px;
+        margin-left: 523px;
     }
 }
 

@@ -606,7 +606,7 @@
 
 	.navbar-menu {
 		width: 96%;
-		max-width: 1240px;
+		max-width: 1100px;
 		min-height: 100px;
 		height: 153px;
 		margin: auto;
@@ -862,6 +862,7 @@
 	#footer .container {
 		position: relative;
 		z-index: 100;
+		width: 95%;
 	}
 
 	#footer ul {
@@ -994,8 +995,17 @@
 /* Tablet */
 @media only screen and (min-width: 768px) {
 
+	#footer {
+		padding-top: 50px;
+	}
+
+	#footer .bolt {
+		top: -161px;
+	}
+
 	#footer:before {
 		width: 3000px;
+		top: -112px;
 	}
 
 }
@@ -1151,6 +1161,10 @@
 		width: 295px;
 		max-width: 295px;
 	}
+
+	#footer .item p {
+		width: 450px;
+	}
 }
 
 @media only screen and (min-width: 1500px) {
@@ -1173,7 +1187,7 @@
 		clip-path: polygon(0 66%, 100% 0, 100% 100%, 0% 100%);
 		background: #232323;
 		opacity: 1;
-		bottom: 0;
+		bottom: -22px;
 		left: 0;
 	}
 }
