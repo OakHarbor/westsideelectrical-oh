@@ -643,7 +643,7 @@
 
     body.dark-mode #about .lights {
         margin-left: -294px;
-        top: -586px;
+        top: -860px;
     }
 
     body.dark-mode #about .lights .dark {
@@ -691,7 +691,7 @@
         position: absolute;
         left: auto;
         top: 71px;
-        right: 61px;
+        right: 31px;
         z-index: 5000;
     }
 
@@ -862,6 +862,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
         right: auto;
         left: 50%;
         margin-left: 523px;
+    }
+
+    body.dark-mode #about .lights {
+        top: -825px;
+    }
+
+    #about .lights img.desktop {
+        width: 571px;
+        height: 1600px;
     }
 }
 
