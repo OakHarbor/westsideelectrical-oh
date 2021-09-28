@@ -22,24 +22,6 @@
 		font-display: swap;
 	}
 
-	@font-face {
-		font-family: 'Barlow';
-		src: url('/fonts/Barlow-Regular.ttf') format('woff2'),
-			 url('/fonts/Barlow-Regular.ttf') format('woff');
-		font-weight: normal;
-		font-style: normal;
-		font-display: swap;
-	}
-
-	@font-face {
-		font-family: 'Barlow-Bold';
-		src: url('/fonts/Barlow-Bold.ttf') format('woff2'),
-			 url('/fonts/Barlow-Bold.ttf') format('woff');
-		font-weight: normal;
-		font-style: normal;
-		font-display: swap;
-	}
-
 	section {
 		padding: 50px 0px;
 	}
@@ -82,7 +64,7 @@
 		margin: 0;
 		padding: 0;
 		overflow-x: hidden !important;
-		font-family: "Barlow", sans-serif;
+		font-family: "Roboto", sans-serif;
 	}
 
 	body {
