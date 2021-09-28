@@ -12,7 +12,7 @@
 
     #hero {
         height: auto;
-        background: url("/images/landing.jpg");
+        background: url("/images/landing-mobile.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -157,6 +157,10 @@
 
     #hero {
         padding-bottom: 300px;
+        background: url("/images/landing.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #hero:before {
