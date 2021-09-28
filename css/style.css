@@ -94,8 +94,7 @@
         font-family: "Barlow", sans-serif;
     }
 
-    .heroText h2 .bold {
-        font-weight: bold;
+    .heroText h2 strong {
         color: var(--primary);
     }
     
