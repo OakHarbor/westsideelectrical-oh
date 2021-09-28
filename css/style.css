@@ -1730,14 +1730,12 @@
     }
 
     #portfolio .item1 {
-        background: url("../images/example1.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
 
     #portfolio .item2 {
-        background: url("../images/example2.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1747,7 +1745,6 @@
     }
 
     #portfolio .item3 {
-        background: url("../images/example3.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1759,7 +1756,6 @@
     }
 
     #portfolio .item4 {
-        background: url("../images/example4.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
