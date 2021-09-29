@@ -478,7 +478,7 @@
 
     #cards .card p {
         font-size: 16px;
-        line-height: 19px;
+        line-height: 1.5em;
     }
 }
 
@@ -891,7 +891,7 @@
 
     .standard p {
         font-size: 16px;
-        line-height: 19px;
+        line-height: 24px;
     }
 
     #about .content {
@@ -904,7 +904,7 @@
 
     #about .content p {
         font-size: 16px;
-        line-height: 19px;
+        line-height: 1.5em;
     }
 
     #about .button-solid {
@@ -1972,6 +1972,8 @@
 
     #portfolio {
         padding-bottom: 0;
+        position: relative;
+        z-index: 1000;
     }
 }
 
@@ -2139,7 +2141,7 @@
         width: 100%;
         max-width: 391px;
         text-align: left;
-        line-height: 19px;
+        line-height: 1.5em;
         margin: 0;
     }
 }
@@ -2152,10 +2154,15 @@
 
     #reviews {
         padding-top: 255px;
+        background: url("../images/circui-removebg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     #reviews .background {
         width: 2500px;
+        display: none;
     }
 }
 
