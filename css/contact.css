@@ -258,6 +258,15 @@
 
 @media only screen and (min-width: 1400px) {
 
+    #hero {
+        padding-bottom: 400px;
+        height: auto;
+    }
+
+    .hero-content {
+        margin-top: 0;
+    }
+
     .white-clip, .red-clip {
         display: block;
         position: absolute;
@@ -286,34 +295,7 @@
         bottom: -45px;
         z-index: 10;
     }
-
-    #hero {
-        padding-bottom: 300px;
-        height: auto;
-    }
-
-    .hero-content {
-        margin-top: 0;
-    }
     
-}
-
-@media only screen and (min-width: 2000px) {
-    #hero {
-        padding-bottom: 16%;
-    }
-}
-
-@media only screen and (min-width: 2500px) {
-    #hero {
-        padding-bottom: 13%;
-    }
-}
-
-@media only screen and (min-width: 3200px) {
-    #hero {
-        padding-bottom: 10%;
-    }
 }
 
 /*-- -------------------------- -->
@@ -481,6 +463,7 @@
 
     body.dark-mode #form-page:before {
         background: var(--dark);
+        display: none;
     }
 
     #form {
