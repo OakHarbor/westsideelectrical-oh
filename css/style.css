@@ -1610,6 +1610,7 @@
         z-index: -1;
         right: -60px;
         width: 300px;
+        pointer-events: none;
     }
 
     #portfolio .cls-1,
@@ -1961,6 +1962,8 @@
        max-width: 1400px; 
        margin-left: auto;
        margin-right: auto;
+       position: relative;
+       z-index: 2000;
     }
     #portfolio .triangles {
         top: -363px;
@@ -2149,15 +2152,40 @@
 @media only screen and (min-width: 1300px) {
 
 }
+ 
+@media only screen and (min-width: 1700px) {
+
+    #reviews {
+        padding-top: 255px;
+        position: relative;
+    }
+
+    #reviews .background {
+        display: none !important;
+    }
+
+    #reviews:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: url("../images/circui-removebg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: .3;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
 
 @media only screen and (min-width: 1900px) {
 
     #reviews {
         padding-top: 255px;
-        background: url("../images/circui-removebg.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        position: relative;
     }
 
     #reviews .background {

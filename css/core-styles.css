@@ -160,6 +160,7 @@
 		-o-transition: background-color .2s;
 		transition: background-color .2s;
 		color: #fff;
+		cursor: pointer;
 	}
 
 	.button-solid:hover:before {
