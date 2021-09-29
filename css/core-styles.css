@@ -909,8 +909,10 @@
 	}
 
 	#footer .item p,
-	#footer .item a {
+	#footer .item span {
 		opacity: .9;
+		color: #fff;
+		display: block;
 	}
 
 	#footer .credit {

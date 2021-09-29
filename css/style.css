@@ -755,6 +755,10 @@
         width: 100%;
     }
 
+    body.dark-mode #about .lights #desk2 {
+        display: none;
+    }
+
     #about .lights img.desktop {
         display: none;
     }
@@ -770,6 +774,15 @@
         font-weight: 700;
         display: block;
         margin-bottom: 17px;
+    }
+
+    .standard .aria-tag {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        z-index: -100;
     }
 
     .standard h2 {
@@ -824,6 +837,10 @@
     #about .lights img#desk2 {
         width: 600px;
         height: 1070px;
+    }
+
+    body.dark-mode #about .lights #desk2 {
+        display: Block;
     }
 
     #about .content {
@@ -2203,6 +2220,7 @@
             -ms-flex-order: 1;
                 order: 1;
         display: block;
+        margin: auto;
         margin-bottom: 50px;
     }
 }
