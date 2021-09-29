@@ -837,6 +837,7 @@
     #about .lights img#desk2 {
         width: 600px;
         height: 1070px;
+        display: none;
     }
 
     body.dark-mode #about .lights #desk2 {
