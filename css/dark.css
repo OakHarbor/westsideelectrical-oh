@@ -3,9 +3,6 @@
 @media screen and (min-width: 0px) {
 
     .neon {
-        -webkit-transition: 100ms ease-in;
-        -o-transition: 100ms ease-in;
-        transition: 100ms ease-in;
         font-family: 'neon';
         color: #fff;
         display: -webkit-box;
@@ -189,28 +186,28 @@
 
     .top-dark-mode-button .moon {
         transform: translateY(0px);
-        transition: .3s ease;
+        transition: transform .3s, opacity .3s;
         opacity: 1;
         visibility: visible;
     }
 
     .top-dark-mode-button .sun {
         transform: translateY(30px);
-        transition: .3s ease;
+        transition: transform .3s, opacity .3s;
         opacity: 0;
         visibility: hidden;
     }
 
     body.dark-mode .top-dark-mode-button .moon {
         transform: translateY(-30px);
-        transition: .3s ease;
+        transition: transform .3s, opacity .3s;
         opacity: 0;
         visibility: hidden;
     }
 
     body.dark-mode .top-dark-mode-button .sun {
         transform: translateY(0);
-        transition: .3s ease;
+        transition: transform .3s, opacity .3s;
         opacity: 1;
         visibility: visible;
     }
@@ -247,9 +244,6 @@
         top: 90px;
         right: 16px;
         z-index: 1000;
-        -webkit-transition: .3s ease-in;
-        -o-transition: .3s ease-in;
-        transition: .3s ease-in;
         z-index: 1001;
     }
     
@@ -390,9 +384,6 @@
     body.dark-mode .hamburger-inner::before, 
     body.dark-mode .hamburger-inner::after {
         background: #fff;
-        -webkit-transition: .3s ease;
-        -o-transition: .3s ease;
-        transition: .3s ease;
     }
     
     body.dark-mode .hamburger.is-active .hamburger-inner::after,
