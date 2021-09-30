@@ -645,7 +645,7 @@
 
     body.dark-mode #about .lights {
         margin-left: -294px;
-        top: -1100px;
+        top: -595px;
     }
 
     body.dark-mode #about .lights .dark {
@@ -867,7 +867,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     }
 
     body.dark-mode #about .lights {
-        top: -1100px;
+        top: -559px;
     }
 
     #about .lights img.desktop {

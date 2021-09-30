@@ -824,6 +824,10 @@
         display: none;
     }
 
+    body.dark-mode #about .lights #mobile-dark {
+        display: none;
+    }
+
     #about .lights img.desktop {
         display: block;
         width: 300px;

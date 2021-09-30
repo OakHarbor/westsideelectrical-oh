@@ -1102,7 +1102,7 @@
 		display: inline-block;
 		font-size: 14px;
 		line-height: 17px;
-		font-family: 'Barlow-Bold';
+		font-weight: bold;
 		text-decoration: underline;
 	}
 
