@@ -10,7 +10,7 @@
 
     #hero {
         height: auto;
-        background: url("/images/portfolio.jpg");
+        background: url("/images/contact-mobile.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -188,6 +188,10 @@
 
     #hero {
         padding-bottom: 300px;
+        background: url("/images/contact.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #hero:before {
@@ -214,6 +218,10 @@
 }
 
 @media only screen and (min-width: 1024px) {
+
+    .active-menu {
+        border: none;
+    }
 
     #hero {
         padding-left: 0;

@@ -64,7 +64,7 @@
 
     #hero {
         height: auto;
-        background: url("/images/about.jpg");
+        background: url("/images/about-mobile.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -242,6 +242,10 @@
 
     #hero {
         padding-bottom: 300px;
+        background: url("/images/about.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #hero:before {

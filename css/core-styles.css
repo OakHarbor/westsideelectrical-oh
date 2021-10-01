@@ -22,6 +22,24 @@
 		font-display: swap;
 	}
 
+	@font-face {
+		font-family: 'Barlow';
+		src: url('/fonts/Barlow-Regular.ttf') format('woff2'),
+			 url('/fonts/Barlow-Regular.ttf') format('woff');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'BarlowBold';
+		src: url('/fonts/Barlow-Bold.ttf') format('woff2'),
+			 url('/fonts/Barlow-Bold.ttf') format('woff');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
 	section {
 		padding: 50px 0px;
 	}
@@ -64,7 +82,7 @@
 		margin: 0;
 		padding: 0;
 		overflow-x: hidden !important;
-		font-family: "Roboto", sans-serif;
+		font-family: "Barlow", sans-serif;
 	}
 
 	body {
@@ -510,6 +528,25 @@
 
 /* Small Desktop */
 @media screen and (min-width: 1024px) {
+
+	::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #fff;
+    }
+
+    ::-webkit-scrollbar-track-piece {
+        background-color: #000;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+        background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: var(--primary);
+    }
 
 	.mobile-nav {
         max-width: 100%;
