@@ -1028,7 +1028,7 @@
 @media only screen and (min-width: 1024px) {
 
 	#footer {
-		margin-top: 300px;
+		margin-top: 74px;
 		padding-bottom: 96px;
 		padding-top: 0;
 	}
@@ -1161,6 +1161,9 @@
 /* Regular Desktop */
 @media only screen and (min-width: 1300px) {
 
+	#footer {
+		margin-top: 120px;
+	}
 
 	#footer .bolt {
 		left: 50%;
