@@ -231,6 +231,7 @@
         position: relative;
         z-index: 109;
         padding-bottom: 500px;
+        background-attachment: fixed;
     }
 
     #hero:before {
