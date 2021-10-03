@@ -2348,6 +2348,8 @@
 @media only screen and (min-width: 1300px) {
 
     #quality img {
+        position: relative;
+        z-index: 100;
         -webkit-transform: translateY(90px);
             -ms-transform: translateY(90px);
                 transform: translateY(90px);
