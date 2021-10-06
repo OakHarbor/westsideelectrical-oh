@@ -220,7 +220,7 @@
 @media only screen and (min-width: 1024px) {
 
     .active-menu {
-        border: none;
+        border-bottom: 4px solid var(--primary);
     }
 
     #hero {
@@ -472,13 +472,14 @@
 
     body.dark-mode #form-page:before {
         background: var(--dark);
-        display: none;
     }
 
     #form {
         margin-top: -350px;
         max-width: 950px;
         margin-bottom: 152px;
+        position: relative;
+        z-index: 1000;
     }
 }
 
@@ -621,7 +622,7 @@
     #image {
         max-width: 1030px;
         height: 492px;
-        margin-bottom: -160px;
+        margin-bottom: 172px;
         position: relative;
         z-index: 1000;
     }

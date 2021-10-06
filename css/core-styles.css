@@ -1196,7 +1196,7 @@
 		max-width: 295px;
 	}
 
-	#footer .item p {
+	#footer .item:nth-of-type(1) p {
 		width: 450px;
 	}
 }
