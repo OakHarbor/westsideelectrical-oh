@@ -32,7 +32,7 @@
                 order: 2;
     }
 
-    #about-portfolio {
+    #quality {
         -webkit-box-ordinal-group: 5;
             -ms-flex-order: 4;
                 order: 4;
@@ -961,7 +961,7 @@
 
     #ryan {
         position: relative;
-        margin-bottom: 200px;
+        margin-bottom: 30px;
     }
 
     #ryan:before {
@@ -1088,101 +1088,62 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 /*-- -------------------------- -->
-<---          Portfolio         -->
+<---          Qualities         -->
 <--- -------------------------- -*/
 
 @media only screen and (min-width: 0em) {
 
-    #about-portfolio {
-        padding-top: 0;
+    .neon span:nth-child(1) {
+        margin-right: 8px;
+    }
+
+    #quality {
         position: relative;
     }
 
-    body.dark-mode #about-portfolio {
-        padding-bottom: 50px;
+    #quality .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
-    #about-portfolio .container {
-        max-width: 500px;
+    #quality .content {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
     }
 
-   #about-portfolio .cards {
-       margin-top: 50px;
-   }
+    #quality .signature {
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+    }
 
-   body.dark-mode #about-portfolio .cards .card {
-    background: #181616;
-    -webkit-box-shadow: 0px 0px 25px -5px rgba(250, 32, 68,.7);
-            box-shadow: 0px 0px 25px -5px rgba(250, 32, 68,.7);
-    border-right: 1px solid var(--primary);
-    border-top: 1px solid var(--primary);
-    border-left: 1px solid var(--primary);
-    border-bottom: 5px solid var(--primary);
-}
+    #quality .title {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 800;
+        display: block;
+        text-align: center;
+    }
 
-   #about-portfolio .card {
-        width: 295px;
+    #quality img {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        display: block;
         margin: auto;
-        margin-bottom: 21px;
-        -webkit-box-shadow: 0px 4px 45px 4px rgba(0, 0, 0, 0.14);
-                box-shadow: 0px 4px 45px 4px rgba(0, 0, 0, 0.14);
-        padding: 15px 15px 38px 15px;
-        background: #fff;
-   }
-
-   #about-portfolio .card .image {
-        background: url("../images/example1.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 125px;
-        width: 265px;
-        margin: auto;
-        border-radius: 10px;
-        margin-bottom: 41px;
-   }
-
-   #about-portfolio .card:nth-of-type(2) .image {
-        background: url("/images/example2.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-   }
-
-   #about-portfolio .card:nth-of-type(3) .image {
-        background: url("/images/example3.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        margin-bottom: 50px;
     }
 
-    #about-portfolio .card:nth-of-type(4) .image {
-        background: url("/images/example4.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-   #about-portfolio .card h3 {
-       font-weight: bold;
-       font-size: 24px;
-       margin-bottom: 20px;
-   }
-
-   #about-portfolio .card p {
-       font-size: 16px;
-       line-height: 19px;
-   }
-
-   #about-portfolio .card a {
-       font-size: 16px;
-       color: var(--primary);
-       text-decoration: underline;
-       display: block;
-       text-align: center;
-   }
-
-   #about-portfolio .triangles {
+    #quality .triangles {
         position: absolute;
         -webkit-transform: rotate(169deg);
             -ms-transform: rotate(169deg);
@@ -1194,12 +1155,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
         z-index: -1;
     }
 
-    #about-portfolio .cls-1,
-    #about-portfolio .cls-2,
-    #about-portfolio .cls-3, 
-    #about-portfolio .cls-4,
-    #about-portfolio .cls-5,
-    #about-portfolio .cls-6 {
+    #quality .cls-1,
+    #quality .cls-2,
+    #quality .cls-3, 
+    #quality .cls-4,
+    #quality .cls-5,
+    #quality .cls-6 {
         -webkit-animation-name: fade;
                 animation-name: fade;
         -webkit-animation-timing-function: ease;
@@ -1215,63 +1176,63 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
         opacity: .2;
     }
 
-    #about-portfolio .triangles .cls-1 {
+    #quality .triangles .cls-1 {
         -webkit-animation-delay: .2s;
                 animation-delay: .2s;
         -webkit-animation-duration: 2.73s;
                 animation-duration: 2.73s;
     }
 
-    #about-portfolio .triangles .cls-1:nth-of-type(3n+0) {
+    #quality .triangles .cls-1:nth-of-type(3n+0) {
         -webkit-animation-delay: .17s;
                 animation-delay: .17s;
         -webkit-animation-duration: 2.18s;
                 animation-duration: 2.18s;
     }
 
-    #about-portfolio .triangles .cls-2 {
+    #quality .triangles .cls-2 {
         -webkit-animation-delay: .5s;
                 animation-delay: .5s;
         -webkit-animation-duration: 2.73s;
                 animation-duration: 2.73s;
     }
 
-    #about-portfolio .triangles .cls-3 {
+    #quality .triangles .cls-3 {
         -webkit-animation-delay: .1s;
                 animation-delay: .1s;
         -webkit-animation-duration: 1.3s;
                 animation-duration: 1.3s;
     }
 
-    #about-portfolio .triangles .cls-3:nth-of-type(3n+0) {
+    #quality .triangles .cls-3:nth-of-type(3n+0) {
         -webkit-animation-delay: .27s;
                 animation-delay: .27s;
         -webkit-animation-duration: 2.38s;
                 animation-duration: 2.38s;
     }
 
-    #about-portfolio .triangles .cls-4 {
+    #quality .triangles .cls-4 {
         -webkit-animation-delay: .5s;
                 animation-delay: .5s;
         -webkit-animation-duration: 3.3s;
                 animation-duration: 3.3s;
     }
 
-    #about-portfolio .triangles .cls-4:nth-of-type(3n+0) {
+    #quality .triangles .cls-4:nth-of-type(3n+0) {
         -webkit-animation-delay: 0s;
                 animation-delay: 0s;
         -webkit-animation-duration: 3.1s;
                 animation-duration: 3.1s;
     }
 
-    #about-portfolio .triangles .cls-5 {
+    #quality .triangles .cls-5 {
         -webkit-animation-delay: .32s;
                 animation-delay: .32s;
         -webkit-animation-duration: 2.6s;
                 animation-duration: 2.6s;
     }
 
-    #about-portfolio .triangles .cls-6 {
+    #quality .triangles .cls-6 {
         -webkit-animation-delay: .1s;
                 animation-delay: .1s;
         -webkit-animation-duration: 2s;
@@ -1281,80 +1242,112 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 @media only screen and (min-width: 568px) {
 
-    #about-portfolio .triangles {
+    #quality img {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #quality .triangles {
         width: 600px;
         bottom: -120px;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) {
 
-    #about-portfolio {
-        padding-bottom: 150px;
-    }
-
-    body.dark-mode #about-portfolio {
-        padding-bottom: 100px;
-    }
-
-    #about-portfolio .triangles {
+    #quality .triangles {
         width: 1000px;
         bottom: -92px;
     }
-
-    #about-portfolio .container {
-        max-width: 650px;
-    }
-
-    #about-portfolio .cards {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        margin-top: 192px
-    }
-
-    #about-portfolio .card:nth-of-type(2),
-    #about-portfolio .card:nth-of-type(4) {
-        -webkit-transform: translateY(-70px);
-            -ms-transform: translateY(-70px);
-                transform: translateY(-70px);
-    }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 64em) {
 
-    #about-portfolio {
-        padding-bottom: 0px;
+    #quality {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #quality .container {
+        width: 100%;
+        max-width: 1094px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
-    #about-portfolio .triangles {
+    #quality .content {
+        width: 503px;
+        text-align: left;
+        margin-left: auto;
+        margin-right: 0;
+        margin-left: 0;
+        padding-top: 0;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+    }
+
+    #quality h2 {
+        margin-bottom: 40px;
+    }
+
+    #quality .content p {
+        font-size: 16px;
+        line-height: 19px;
+        width: 525px;
+    }
+
+    #quality .signature {
+        text-align: left;
+    }
+
+    #quality .title {
+        text-align: left;
+    }
+
+    #quality img {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        max-width: 525px;
+        width: 40vw;
+        height: 50%;
+        margin: 0;
+        max-height: 691px;
+    }
+
+    #quality .triangles {
         width: 1315px;
         bottom: -298px;
-    }
-
-    #about-portfolio .card a:hover {
-        color: #121212;
-    }
-
-    body.dark-mode #about-portfolio .card a:hover {
-        color: #fff;
     }
 }
 
 @media only screen and (min-width: 1300px) {
 
-    #about-portfolio .container {
-        max-width: 1300px;
+    #quality img {
+        position: relative;
+        z-index: 100;
+        -webkit-transform: translateY(90px);
+            -ms-transform: translateY(90px);
+                transform: translateY(90px);
     }
 }
 
 @media only screen and (min-width: 1600px) {
 
-    #about-portfolio .triangles {
+    #quality .triangles {
         bottom: -365px;
     }
 }
