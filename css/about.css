@@ -517,7 +517,6 @@
     #about-page .container {
         position: relative;
         z-index: 102;
-        margin-bottom: 50px;
         max-width: 500px;
     }
 
