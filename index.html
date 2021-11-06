@@ -28,8 +28,10 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/core-styles.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/local.css">
+    <link rel="stylesheet" href="/css/grid.css">
     <link rel="stylesheet" href="/css/dark.css">
 
     <link rel="preload" as="font" type="font/woff2" href="/fonts/RussoOne-Regular.ttf" crossorigin>
@@ -48,52 +50,6 @@
         })();
       
       </script>
-
-    <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "LocalBusiness",
-      "name" : "Westside Electrical",
-      "telephone" : "(360) 762-8575",
-      "email" : "westsideelectrical@icloud.com",
-      "priceRange" : "$$",
-      "image" : "https://d33wubrfki0l68.cloudfront.net/images/6f8f5ee2b0f2f646c1a6ecb8d490a3c195de883c/portfolio.jpg",
-      "address" : {
-        "@type" : "PostalAddress",
-        "addressRegion" : "WA",
-        "postalCode" : "98052"
-      },
-      "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Friday"
-        ],
-        "opens": "0:00",
-        "closes": "24:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Saturday"
-        ],
-        "opens": "00:00",
-        "closes": "00:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "00:00"
-      }
-    ]
-    }
-    </script>
 
     <title>Whidbey Island Electrician | Westside Electrical | Oak Harbor, WA</title>
 </head>
@@ -134,7 +90,7 @@
                         <li class="nav-li hover-link"><a href="/html/about.html">About</a></li>
                         <li class="nav-li hover-link"><a href="/index.html#services">Services</a></li>
                         <!-- <li class="nav-li"><a href="html/portfolio.html">Portfolio</a></li>-->
-                        <li class="nav-li"><a href="/html/testimonials.html">Testimonials</a></li>
+                        <li class="nav-li hover-link"><a href="/html/testimonials.html">Testimonials</a></li>
                         <li class="nav-li"><a class="contact-button" href="/html/contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -216,7 +172,7 @@
                     <div class="neon exp">
                         <span class="aria-tag">10+ Years of Experience</span>
                         <span aria-hidden="true">10</span>
-                        <span aria-hidden="true">+</span>
+                        <span class="margin-right" aria-hidden="true">+</span>
 
                         <span aria-hidden="true">Year</span>
                         <span aria-hidden="true">s</span>
@@ -240,146 +196,6 @@
                         Call Now
                     </a>
                 </div>
-            </div>
-        </section>
-
-        <!-- ============================================ -->
-        <!--                      FAQ                     -->
-        <!-- ============================================ -->
-    
-        <section id="faq" class="standard">
-            <div class="container">
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq-item item-1">
-                    <h3>What is a “short circuit?” <span>+</span></h3>
-                    <div class="faq-extended-content">
-                        <p>
-                            A short circuit happens when a "hot wire" (one that carries an electrical current) makes contact with grounded conductors such as the neutral (usually) white color wire or the bare copper wire (usually green).  These connections generate a lot of heat and are the leading cause of structual fires across the world.
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item item-2">
-                    <h3>What causes a short circuit?<span>+</span></h3>
-                    <div class="faq-extended-content">
-                        <ul>
-                            <li>Live wire coming in contact with water or other liquids.</li>
-                            <li>Faulty insulation or loose wire connections coming into contact with each other.</li>
-                            <li>Punturing the wall with a nail or screw that comes in contact with a wire.</li>
-                            <li>Abnormal build up of electrical currents in yuor wiring.</li>
-                            <li>Common pests like rats or mice chewing on wires in the walls or attic.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="faq-item item-3">
-                    <h3>What is a GFCI outlet?<span>+</span></h3>
-                    <div class="faq-extended-content">
-                        <p>
-                            GFCI stands for "Ground Fault Circuit Interrupter" and look different than other outlets because they have a RESET and TEST button on the front of them.  Regular outlets don't have these buttons. 
-                        </p>
-                        <p>
-                            A GFCI outlet is supposed to protect you from an electrical shock from moisture, so you will see GFCI outlets in your kitchens, bathrooms, and garages or outdoor outlets.
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item item-4">
-                    <h3>My fridge is still not working and the circuit breaker isn't tripped.<span>+</span></h3>
-                   <div class="faq-extended-content">
-                        <p>
-                            Check the age of your home.  Homes built before 1981 commonly have two circuits for your kitchen.  Check both circuits, and if they're both still working and not tripped then it is a wiring problem and you'll need to give us a call.
-                        </p>
-                        <p>
-                            Homes built AFTER 1981 chances are a GFCI outlet has been tripped, just go through your kitchen and hit the RESET button until power is restored.  If it's tripped the button is usually depressed and inset in the outlet.  If you click the RESET button and you don't hear a CLICK and there's still no power, it could be an issue with the whol circuit and then you'll need to give us a call.
-                        </p>
-                   </div>
-                </div>
-                <div class="faq-item item-5">
-                    <h3>Why do my lights randomly dim then return to normal?<span>+</span></h3>
-                    <div class="faq-extended-content">
-                        <p>
-                            This is pretty common during the summer and is called a "Brown Out".  The electrical grid is under a lot of extra stress from air conditioners running all summer which causes less electricity to be available, thus making your lights dim breifly and randomnly.  nothing to be worried about.
-                        </p>
-                        <p>
-                            However, it could also be a loose neutral conneciton that connects ot the main power line.  To make sure it isn't this, call your power company first, and if they don't have any issues on their end that is when you should give us a call.
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item item-6">
-                    <h3>Why does one of my outlets not work?<span>+</span></h3>
-                    <div class="faq-extended-content">
-                        <p>
-                            Sometimes a light switch is connected to an outlet that we didn't know about.  Try plugging something in to the wall and turning on the light switches to see if the outlet is now working.  If the outlet still isn't working this could be a sign that your circuit breaker was tripped and just needs to be reset.  
-                        </p>
-                        <p>
-                            If resetting the breaker still doesn't fix the outlet, then give us a call to see what is happening.
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item item-7">
-                    <h3>Why are my new fluorescent bulbs flickering?<span>+</span></h3>
-                    <div class="faq-extended-content">
-                        <ul>
-                            <li>Check to see if the two prongs on the bulbs are lined up correctly.  If they aren't, this could be the cause.</li>
-                            <li>Some light fixtures may flicker if you don't replace ALL the bulbs.  If there's two lights in a unit, replace both of them.</li>
-                            <li>There's a black box called a "Ballast".  If it is burnt out that could be the reason for your lights flickering.  It's a black box located inside your light fixture.</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- <div class="faq-item item-8">
-                    <h3>FAQ<span>+</span></h3>
-                    <div class="faq-extended-content">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio cupiditate consequatur ullam eius aliquid amet ad blanditiis aut, natus numquam eum, enim ipsam sequi quasi libero architecto veritatis nam accusantium ab saepe laudantium dicta? Harum fugit sequi asperiores error dicta?
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item item-9">
-                    <h3>FAQ<span>+</span></h3>
-                    <div class="faq-extended-content">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio cupiditate consequatur ullam eius aliquid amet ad blanditiis aut, natus numquam eum, enim ipsam sequi quasi libero architecto veritatis nam accusantium ab saepe laudantium dicta? Harum fugit sequi asperiores error dicta?
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item item-10">
-                    <h3>FAQ<span>+</span></h3>
-                    <div class="faq-extended-content">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio cupiditate consequatur ullam eius aliquid amet ad blanditiis aut, natus numquam eum, enim ipsam sequi quasi libero architecto veritatis nam accusantium ab saepe laudantium dicta? Harum fugit sequi asperiores error dicta?
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item item-11">
-                    <h3>FAQ<span>+</span></h3>
-                    <div class="faq-extended-content">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio cupiditate consequatur ullam eius aliquid amet ad blanditiis aut, natus numquam eum, enim ipsam sequi quasi libero architecto veritatis nam accusantium ab saepe laudantium dicta? Harum fugit sequi asperiores error dicta?
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item item-12">
-                    <h3>FAQ<span>+</span></h3>
-                    <div class="faq-extended-content">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio cupiditate consequatur ullam eius aliquid amet ad blanditiis aut, natus numquam eum, enim ipsam sequi quasi libero architecto veritatis nam accusantium ab saepe laudantium dicta? Harum fugit sequi asperiores error dicta?
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item item-13">
-                    <h3>FAQ<span>+</span></h3>
-                    <div class="faq-extended-content">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio cupiditate consequatur ullam eius aliquid amet ad blanditiis aut, natus numquam eum, enim ipsam sequi quasi libero architecto veritatis nam accusantium ab saepe laudantium dicta? Harum fugit sequi asperiores error dicta?
-                        </p>
-                    </div>
-                </div>
-                <div class="faq-item item-14">
-                    <h3>FAQ<span>+</span></h3>
-                    <div class="faq-extended-content">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio cupiditate consequatur ullam eius aliquid amet ad blanditiis aut, natus numquam eum, enim ipsam sequi quasi libero architecto veritatis nam accusantium ab saepe laudantium dicta? Harum fugit sequi asperiores error dicta?
-                        </p>
-                    </div>
-                </div> -->
             </div>
         </section>
 
@@ -512,13 +328,13 @@
                 We put an enormous amount of effort, time, and quality control to ensure our work is flawless and exceeds expectations.  Every project is unique and comes with unique challenges.  And We’re ready for all of them.
             </p>
             <div class="grid">
-                <div class="grid-item item1 b-lazy" data-src="/images/example1.jpg"></div>
-                <div class="grid-item item2 b-lazy" data-src="/images/example2.jpg"></div>
-                <div class="grid-item item3 b-lazy" data-src="/images/example3.jpg"></div>
-                <div class="grid-item item4 b-lazy" data-src="/images/example4.jpg"></div>
-                <div class="grid-item item5 b-lazy" data-src="/images/example5.jpg"></div>
-                <div class="grid-item item6 b-lazy" data-src="/images/example6.jpg"></div>
-                <div class="grid-item item7 b-lazy" data-src="/images/example7.jpg"></div>
+                <div class="grid-item item1" ><img loading="lazy" decoding="async" src="/images/example1.jpg" alt=""></div>
+                <div class="grid-item item2" ><img loading="lazy" decoding="async" src="/images/example2.jpg" alt=""></div>
+                <div class="grid-item item3" ><img loading="lazy" decoding="async" src="/images/example3.jpg" alt=""></div>
+                <div class="grid-item item4" ><img loading="lazy" decoding="async" src="/images/example4.jpg" alt=""></div>
+                <div class="grid-item item5" ><img loading="lazy" decoding="async" src="/images/example5.jpg" alt=""></div>
+                <div class="grid-item item6" ><img loading="lazy" decoding="async" src="/images/example6.jpg" alt=""></div>
+                <!-- <div class="grid-item item7" ><img loading="lazy" decoding="async" src="/images/example7.jpg" alt=""></div> -->
             </div>
         </section>
 
@@ -580,7 +396,7 @@
                     <span class="sub">Why Westside</span>
                     <div class="neon why">
                         <span class="aria-tag">Why Westside</span>
-                        <span aria-hidden="true">Why</span>
+                        <span class="margin-right" aria-hidden="true">Why</span>
 
                         <span aria-hidden="true">Wes</span>
                         <span aria-hidden="true">t</span>

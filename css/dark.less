@@ -1,0 +1,794 @@
+
+/* Dark Mode Core Styles and navigation */
+@media screen and (min-width: 0px) {
+
+    .neon {
+        font-family: 'neon';
+        color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+        margin-bottom: 20/20em;
+        position: relative;
+
+        span {
+            font-family: 'neon';
+            display: table-cell;
+            margin: 0;
+            font-size: 24/20em;
+            padding: 0;
+            -webkit-animation: neonGlow 3s linear infinite;
+                    animation: neonGlow 3s linear infinite;
+                    &:nth-child(1) {
+                -webkit-animation-delay: 1s;
+                        animation-delay: 1s;
+            }
+            &:nth-child(2) {
+                -webkit-animation-delay: 1s;
+                        animation-delay: 1s;
+            }
+            &:nth-child(3) {
+                -webkit-animation-delay: 1.2s;
+                        animation-delay: 1.2s;
+            }
+    
+            &:nth-child(4) {
+                -webkit-animation-delay: 1s;
+                        animation-delay: 1s;
+            }
+    
+            &:nth-child(5) {
+                -webkit-animation-delay: 2s;
+                        animation-delay: 2s;
+            }
+    
+            &:nth-child(6) {
+                -webkit-animation-delay: 2.45s;
+                        animation-delay: 2.45s;
+            }
+            &:nth-child(7) {
+                -webkit-animation-delay: 2.75s;
+                        animation-delay: 2.75s;
+            }
+            &:nth-child(8) {
+                -webkit-animation-delay: 2.75s;
+                        animation-delay: 2.75s;
+            }
+            &:nth-child(9) {
+                -webkit-animation-delay: 1.75s;
+                        animation-delay: 1.75s;
+            }
+            &:nth-child(10) {
+                -webkit-animation-delay: 2.05s;
+                        animation-delay: 2.05s;
+            }
+            &:nth-child(11) {
+                -webkit-animation-delay: .75s;
+                        animation-delay: .75s;
+            }
+            &:nth-child(12) {
+                -webkit-animation-delay: 1.22s;
+                        animation-delay: 1.22s;
+            }
+            &:nth-child(13) {
+                -webkit-animation-delay: 2.25s;
+                        animation-delay: 2.25s;
+            }
+            &:nth-child(14) {
+                -webkit-animation-delay: 1.95s;
+                        animation-delay: 1.95s;
+            }
+            &:nth-child(15) {
+                -webkit-animation-delay: 1.35s;
+                        animation-delay: 1.35s;
+            }
+        }
+    }
+    
+    .exp span:nth-child(6) {
+        margin-right: 8/24em !important;
+    }
+    .exp span:nth-child(5) {
+        margin-right: 8/24em !important;
+    }
+
+    .neon {
+        .margin-right {
+            margin-right: 8/24em !important;
+        }
+    }
+
+    :root {
+        --dark: #121212;
+        --medium: #292929;
+        --light: #3c3c3c;
+    }
+
+    .dark-mode-button {
+        background: transparent;
+        border: none;
+        height: 24/20em;
+        width: 24/20em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            display: block;
+            width: 15/20em;
+            position: absolute;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 35/20em;
+            width: 35/20em;
+            background: var(--primary);
+            opacity: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0/20em 7/20em 29/20em 0px;
+        }
+    }
+
+    body.dark-mode .top-dark-mode-button:before {
+        background: var(--primaryDark);
+    }
+
+    .top-dark-mode-button .moon {
+        transform: translateY(0px);
+        transition: transform .3s, opacity .3s;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .top-dark-mode-button .sun {
+        transform: translateY(30/20em);
+        transition: transform .3s, opacity .3s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    body.dark-mode .top-dark-mode-button .moon {
+        transform: translateY(-30/20em);
+        transition: transform .3s, opacity .3s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    body.dark-mode .top-dark-mode-button .sun {
+        transform: translateY(0);
+        transition: transform .3s, opacity .3s;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .dark-mode-group {
+        position: absolute;
+        top: -340/20em;
+        right: 20/20em;
+        width: 80/20em;
+        height: 470/20em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    
+    .dark-mode-group p {
+        font-size: .7em !important;
+        text-align: center;
+        color: #fff;
+    }
+     
+    .top-dark-mode-button {
+        position: absolute;
+        font-size: 20px;
+        top: 90/20em;
+        right: 16/20em;
+        z-index: 1001;
+    }
+    
+    .dark-toggle.dark-mode {
+        background: var(--primary);
+        border: none;
+    }
+
+    body.dark-mode .button-solid {
+        background: transparent;
+        color: var(--primary) !important;
+        border: 1px solid #444;
+        box-shadow: 0 2/18em 0 #000;
+	    border-left-color: #000;
+        border-radius: 5/18em;
+        text-shadow: 0 -1/18em 0 #000;
+        transition: background-color .3s, color .3s;
+        -webkit-box-shadow: 0 2/18em 0 #000;
+	        box-shadow: 0 2/18em 0 #000;
+        -webkit-animation: glow 1.2s ease-out infinite alternate;
+	        animation: glow 1.2s ease-out infinite alternate;
+    }
+
+    body.dark-mode .button-solid:before {
+        display: none;
+    }
+
+    body.dark-mode .button-solid:hover {
+        background-color: var(--primary);
+        color: #fff !important;
+    }
+    
+    /* Navigation */
+    
+    .dark {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    body.dark-mode {
+        .dark {
+            display: block;
+            opacity: 1;
+            z-index: 1;
+        }
+        
+        .light {
+            display: none;
+        }
+        
+        .side-nav a {
+            color: #fff;
+        }
+        
+        .hamburger-inner, 
+        .hamburger-inner::before, 
+        .hamburger-inner::after {
+            background: #fff;
+        }
+        
+        .hamburger.is-active .hamburger-inner::after,
+        .hamburger.is-active .hamburger-inner::before {
+            background: #fff;
+        }
+    }
+    
+    /* Body and Core Elements */
+    body.dark-mode {
+        background: var(--dark);
+    }
+    
+    body.dark-mode h2, body.dark-mode p {
+        color: #fff;
+        opacity: .9;
+    }
+    
+    body.dark-mode p {
+        opacity: .9;
+    }
+    
+    body.dark-mode h3 {
+        color: var(--primary);
+    }
+
+    body.dark-mode .button-solid {
+        color: #222;
+        font-weight: bold;
+    }
+
+    body.dark-mode .navbar-menu {
+        background: var(--dark);
+    }
+
+    body.dark-mode .navbar-menu img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 0px) {
+    
+    /*-- -------------------------- -->
+    <---          LANDING           -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #hero h1,
+    body.dark-mode #hero h1 span {
+        color: #fff;
+        opacity: .9;
+    }
+
+    body.dark-mode #hero:before {
+        background: var(--dark);
+        border-top: 60/20em solid #9b021c;
+    }
+
+    #hero .hero-content .heroText .button-solid {
+        transition: background-color .3s, color .3s;
+    }
+
+    body.dark-mode #hero .hero-content .heroText .button-solid:hover {
+        background-color: var(--primary);
+        color:#fff !important;
+    }
+
+    /*-- -------------------------- -->
+    <---           Cards            -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #cards .card {
+        background: #181616;
+        -webkit-box-shadow: 0px 0px 25/20em -5/20em rgba(250, 32, 68,.7);
+                box-shadow: 0px 0px 25/20em -5/20em rgba(250, 32, 68,.7);
+        border-right: 1/20em solid var(--primary);
+        border-top: 1/20em solid var(--primary);
+        border-left: 1/20em solid var(--primary);
+        border-bottom: 5/20em solid var(--primary);
+    }
+
+    /*-- -------------------------- -->
+    <---           About            -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #about:after {
+        background: var(--dark);
+    }
+
+    body.dark-mode #about .lights {
+        width: auto;
+        top: -308/20em;
+    }
+
+    body.dark-mode #about .lights .light {
+        display: none;
+    }
+
+    body.dark-mode #about .lights .dark {
+        display: block;
+        width: 300/20em;
+        height: 534/20em;
+    }
+
+    body.dark-mode .standard .sub {
+        display: none;
+    }
+
+    .neon {
+        display: none;
+    }
+
+    body.dark-mode .neon {
+        display: flex;
+    }
+
+    /*-- -------------------------- -->
+    <---            Faq             -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #faq li {
+        color: #fff;
+        opacity: .9;
+    }
+
+    /*-- -------------------------- -->
+    <---         Services           -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #services .symbol-group .light {
+        display: none;
+    }
+
+    body.dark-mode #services .symbol-group .dark {
+        display: block;
+    }
+
+    body.dark-mode #services .card {
+        background: #181616;
+        border-right: 1/20em solid var(--primary);
+        border-top: 1/20em solid var(--primary);
+        border-left: 1/20em solid var(--primary);
+        border-bottom: 5/20em solid var(--primary);
+        margin-bottom: 0/20em;
+        transform: scale(.8);
+    }
+
+    body.dark-mode #services h3, 
+    body.dark-mode #services span {
+        color: var(--primary);
+    }
+
+    body.dark-mode #services .sub {
+        display: none;
+    }
+
+    body.dark-mode #services ul li {
+        color: #fff;
+        opacity: .9;
+    }
+
+    body.dark-mode #services .card:nth-child(2) {
+        transform: scale(.9);
+        margin: -110/20em 0;
+        position: relative;
+        z-index: 10;
+        -webkit-box-shadow: 0px 0px 25/20em -5/20em rgba(250, 32, 68,.7);
+                box-shadow: 0px 0px 25/20em -5/20em rgba(250, 32, 68,.7);
+    }
+
+    body.dark-mode #services .card:nth-child(2) {
+        background: var(--primaryDark);
+    }
+
+    body.dark-mode #services .card:nth-child(2) .button-solid {
+        border: 2px solid #fff;
+        -webkit-box-shadow: 0 2/18em 0 #000;
+	        box-shadow: 0 2/18em 0 #000;
+            color: #fff !important;
+        -webkit-animation: glowWhite 1.2s ease-out infinite alternate;
+	        animation: glowWhite 1.2s ease-out infinite alternate;
+        transition: background-color .3s, color .3s;
+    }
+
+    body.dark-mode #services .card:nth-child(2) .button-solid {
+        background: transparent;
+    }
+
+    body.dark-mode #services .card:nth-child(2) .button-solid:hover {
+        background-color: #fff;
+        color: #000 !important;
+    }
+
+    /*-- -------------------------- -->
+    <---         Portfolio          -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #portfolio {
+        padding-bottom: 0;
+    }
+
+    body.dark-mode #portfolio .triangles {
+        opacity: .7;
+    }
+
+    body.dark-mode #portfolio .grid:before {
+        background: var(--primaryDark);
+    }
+
+    /*-- -------------------------- -->
+    <---          Reviews           -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #reviews {
+        padding-top: 100/20em;
+        position: relative;
+    }
+
+    body.dark-mode #reviews .background {
+        opacity: .5;
+        display: block;
+        z-index: -10;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+    }
+
+    body.dark-mode #reviews .card {
+        border-radius: 5/20em;
+        background: #181616;
+        width: 90%;
+        box-shadow: 0px 0px 25/20em -5/20em #fa2044;
+        border: 1/20em solid var(--primary);
+        -webkit-animation: glow 1.2s ease-out infinite alternate;
+	        animation: glow 1.2s ease-out infinite alternate;
+    }
+
+    body.dark-mode #reviews .card .name {
+        color: #fff;
+    }
+
+    /*-- -------------------------- -->
+    <---          Quality           -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #quality .signature,
+    body.dark-mode #quality .title {
+        color: #fff;
+    }
+
+    #quality .dark {
+        display: none;
+        border: 1/20em solid var(--primary);
+    }
+
+    body.dark-mode #quality .light {
+        display: none;
+    }
+
+    body.dark-mode #quality .dark {
+        display: block;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+
+    .neon {
+        margin-bottom: 25/20em;
+    }
+
+    .neon span {
+        font-size: 30/20em !important;
+    }
+
+    body.dark-mode #about .lights {
+        margin-left: -294/20em;
+        top: -595/20em;
+    }
+
+    body.dark-mode #about .lights .dark {
+        width: 600/20em;
+    }
+
+}
+
+/* Small Desktop */
+@media screen and (min-width: 1024px) {
+
+    .neon {
+        justify-content: flex-start;
+    }
+
+    #about-portfolio .neon {
+        justify-content: center;
+    }
+
+    #services .neon {
+        justify-content: center;
+    }
+
+    #portfolio .neon {
+        justify-content: center;
+    }
+
+    #reviews .neon {
+        justify-content: center;
+    }
+
+    body.dark-mode .navbar-menu img {
+        display: block;
+    }
+
+    body.dark-mode .navbar-menu {
+        overflow: visible;
+    }
+
+    body.dark-mode:before {
+        background: var(--dark);
+    }
+    
+    .top-dark-mode-button {
+        position: absolute;
+        left: auto;
+        top: 71/20em;
+        right: 31/20em;
+        z-index: 5000;
+    }
+
+    .top-dark-mode-button:after {
+        color: #000;
+    }
+
+    .top-dark-mode-button:before {
+        display: none;
+    }
+
+    body.dark-mode .navbar-menu:before {
+        background: var(--dark);
+    }
+
+    body.dark-mode .navbar-menu {
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        background: transparent;
+    }
+
+    body.dark-mode #hero {
+        background-attachment: fixed;
+    }
+
+    body.dark-mode .schedule a {
+        color: var(--dark);
+    }
+
+    body.dark-mode .split .right .one {
+        border-bottom: 13px solid var(--dark);
+    }
+
+    body.dark-mode #process .card:before {
+        background: var(--medium);
+    }
+
+    body.dark-mode #process .card .green {
+        background: #1c4a49;
+    }
+
+    body.dark-mode #portfolio .line:before {
+        background: #1c4a49;
+    }
+
+    body.dark-mode #portfolio:before {
+        background: #1c4a49;
+    }
+
+    /*-- -------------------------- -->
+    <---           Cards            -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #cards:before {
+        background: var(--dark);
+    }
+
+    body.dark-mode #cards .container:before {
+        background: rgba(0, 0, 0, 1);
+        width: 8/20em;
+        margin-left: -417/20em;
+        bottom: -641/20em;
+    }
+
+
+    body.dark-mode #cards .container:after {
+        background: rgba(0, 0, 0, 1);
+        width: 8/20em;
+        margin-left: -195/20em;
+        bottom: -499/20em;
+    }
+
+    /*-- -------------------------- -->
+    <---           About            -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #about .lights {
+        margin-left: -697/20em;
+        z-index: -1;
+        top: -563/20em;
+    }
+
+    body.dark-mode #about .lights .dark {
+        width: 812/20em;
+        position: relative;
+    }
+
+    /*-- -------------------------- -->
+    <---          Services          -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #services .card {
+        transform: none;
+    }
+
+    body.dark-mode #services .card:nth-child(2) {
+        transform: none;
+        margin: 0;
+        background: var(--primaryDark);
+    }
+
+    body.dark-mode #services .card:nth-child(2) .button-solid {
+        border: 2/18em solid #fff;
+        -webkit-box-shadow: 0 2/18em 0 #000;
+	        box-shadow: 0 2/18em 0 #000;
+            color: #fff !important;
+        -webkit-animation: glowWhite 1.2s ease-out infinite alternate;
+	        animation: glowWhite 1.2s ease-out infinite alternate;
+    }
+
+    /*-- -------------------------- -->
+    <---         Portfolio          -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #portfolio .triangles {
+        opacity: .4;
+    }
+
+    /*-- -------------------------- -->
+    <---         Portfolio          -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #reviews .card {
+        width: 47%;
+    }
+
+    /*-- -------------------------- -->
+    <---          Reviews           -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #reviews .background {
+        opacity: .6;
+    }
+
+    body.dark-mode #reviews:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 150/20em;
+        width: 100%;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,121212+80&0+0,1+91 */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(18,18,18,0.88) 80%, rgba(18,18,18,1) 91%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(18,18,18,0.88) 80%,rgba(18,18,18,1) 91%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(18,18,18,0.88) 80%,rgba(18,18,18,1) 91%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#121212',GradientType=0 ); /* IE6-9 */
+
+        opacity: 1;
+        bottom: 0;
+        left: 0;
+    }
+
+    /*-- -------------------------- -->
+    <---           Footer           -->
+    <--- -------------------------- -*/
+
+    body.dark-mode #footer .bolt {
+        background: var(--dark);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .top-dark-mode-button {
+        right: auto;
+        left: 50%;
+        margin-left: 523/20em;
+        font-size: inherit;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    .top-dark-mode-button {
+        right: auto;
+        left: 50%;
+        margin-left: 523/20em;
+        font-size: inherit;
+    }
+
+    body.dark-mode #about .lights {
+        top: -559/20em;
+    }
+
+    #about .lights img.desktop {
+        width: 571/20em;
+        height: 1600/20em;
+    }
+}
+
+/* Regular Desktop */
+@media screen and (min-width: 1500px) {
+    body.dark-mode .split .right .one {
+        border-bottom: none;
+    }
+
+    .top-dark-mode-button {
+        padding: 0;
+        height: 24/20em;
+        width: 24/20em;
+
+        img {
+            width: 15/20em;
+            height: 24/20em;
+            display: block;
+        }
+    }
+}

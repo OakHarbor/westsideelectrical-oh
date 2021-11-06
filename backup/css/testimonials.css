@@ -1,0 +1,264 @@
+@media only screen and (min-width: 1024px) {
+
+    .heroText {
+        margin-top: 200px;
+    }
+
+    #hero {
+        padding-bottom: 350px;
+    }
+}
+
+/*-- -------------------------- -->
+<---        Testimonials        -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0) {
+
+    #reviews-section {
+        z-index: 100;
+        position: relative;
+        padding: 35px 10px 150px 10px;
+    }
+
+    #reviews-section h2, #reviews-section .yellow-span {
+        display: block;
+        text-align: center;
+    }
+
+    #reviews-section .stars {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+
+    #reviews-section .stars svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    #reviews-section p {
+        text-align: center;
+    }
+
+    #reviews-section .name {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        margin-top: 50px;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    body.dark-mode #reviews-section .name {
+        color: #fff;
+    }
+
+    #reviews-section .name:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: var(--primary);
+        opacity: .4;
+        z-index: -1;
+    }
+
+    #reviews-section a {
+        margin-top: 50px;
+    }
+  }
+  
+/* Landscape */
+@media screen and (min-width: 540px) and (max-width: 767px) {
+
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 1024px) {
+
+#reviews-section {
+    padding: 0px 0 200px;
+    position: relative;
+}
+
+#reviews-section:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 200px;
+    width: 3000px;
+    background: #fff;
+    top: -320px;
+    left: 50%;
+    -webkit-transform: translateX(-50%) rotate(-10deg);
+        -ms-transform: translateX(-50%) rotate(-10deg);
+            transform: translateX(-50%) rotate(-10deg);
+    z-index: 109;
+    border-top: 100px solid var(--primary);
+}
+
+body.dark-mode #reviews-section:before {
+    background: var(--dark);
+}
+
+#reviews-section .stars {
+    margin-top: 150px;
+}
+
+#reviews-section p {
+    width: 800px;
+    margin: auto;
+}
+
+#reviews-section a {
+    width: 173px;
+}
+}
+
+/* Regular Desktop */
+@media only screen and (min-width: 1400px) {
+
+    #reviews-section {
+        z-index: 1000;
+    }
+
+    #reviews-section:before {
+        display: none;
+    }
+
+}
+
+/*-- -------------------------- -->
+<---           Contact          -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0em) {
+
+    #contact-strip {
+        padding: 50px 36px 150px;
+        position: relative;
+        background: var(--primary);
+    }
+    
+    .about-about-contact-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .about-contact-group h2 {
+        color: #000;
+        font-size: 1.875em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .top p {
+        color: #000;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+        max-width: 400px;
+    }
+    
+    .contact-button {
+        background: #fff;
+        color: #4c4c4c;
+        width: 200px;
+    }
+
+    #contact-strip a:hover {
+        background: #2D3D4C;
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+
+    #contact-strip {
+        padding-top: 100px;
+    }
+
+    .about-contact-group {
+        width: 600px;
+        margin: auto;
+    }
+
+    
+}
+
+@media only screen and (min-width: 64em) {
+
+    #contact-strip:before {
+        top: -1px;
+    }
+
+    .about-contact-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        max-width: 1100px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .about-contact-group h2 {
+        margin: 0;
+        text-align: left;
+    }
+
+    .about-contact-group p {
+        text-align: left;
+    }
+
+    .about-contact-group a {
+        margin-right: 0;
+    }
+}
