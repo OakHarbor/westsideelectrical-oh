@@ -39,7 +39,6 @@
     bottom: -9em;
     left: 50%;
     -webkit-transform: translateX(-50%) rotate(-10deg);
-    -ms-transform: translateX(-50%) rotate(-10deg);
     transform: translateX(-50%) rotate(-10deg);
     z-index: 100;
     border-top: 3em solid var(--primary);
@@ -310,7 +309,6 @@
     top: -16em;
     left: 50%;
     -webkit-transform: translateX(-50%) rotate(-10deg);
-    -ms-transform: translateX(-50%) rotate(-10deg);
     transform: translateX(-50%) rotate(-10deg);
     z-index: 109;
     border-top: 5em solid var(--primary);

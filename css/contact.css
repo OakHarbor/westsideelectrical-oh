@@ -39,7 +39,6 @@
     bottom: -9em;
     left: 50%;
     -webkit-transform: translateX(-50%) rotate(-10deg);
-    -ms-transform: translateX(-50%) rotate(-10deg);
     transform: translateX(-50%) rotate(-10deg);
     z-index: 100;
     border-top: 3em solid var(--primary);
@@ -282,10 +281,6 @@
     color: #DDDFE1;
     font-size: 1em;
   }
-  #form ::-moz-placeholder {
-    color: #DDDFE1;
-    font-size: 1em;
-  }
   #form :-ms-input-placeholder {
     color: #DDDFE1;
     font-size: 1em;
@@ -365,7 +360,6 @@
     top: 7.5em;
     left: 50%;
     -webkit-transform: translateX(-50%) rotate(-10deg);
-    -ms-transform: translateX(-50%) rotate(-10deg);
     transform: translateX(-50%) rotate(-10deg);
     z-index: 109;
     border-top: 5em solid var(--primary);
@@ -422,7 +416,6 @@
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
   #image span:before {
@@ -436,7 +429,6 @@
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(0.3);
-    -ms-transform: translate(-50%, -50%) scale(0.3);
     transform: translate(-50%, -50%) scale(0.3);
     z-index: -1;
     border-radius: 50%;

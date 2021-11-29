@@ -13,6 +13,11 @@
   margin-bottom: 50px;
 }
 
+#four span {
+  margin: initial;
+  line-height: initial;
+}
+
 .exp span:nth-child(3) {
   margin-right: 8px !important;
 }
