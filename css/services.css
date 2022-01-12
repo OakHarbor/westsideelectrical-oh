@@ -1,0 +1,497 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+@media only screen and (min-width: 0px) {
+  .white-clip,
+  .red-clip {
+    display: none;
+  }
+  #hero {
+    height: auto;
+    background: url("/images/contact-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    padding-top: 2.5em;
+    padding-bottom: 12.5em;
+  }
+  #hero:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 10em;
+    width: 50em;
+    background: #fff;
+    bottom: -9em;
+    left: 50%;
+    -webkit-transform: translateX(-50%) rotate(-10deg);
+    transform: translateX(-50%) rotate(-10deg);
+    z-index: 100;
+    border-top: 3em solid var(--primary);
+  }
+  #hero #dark {
+    position: absolute;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    z-index: 0;
+  }
+  #hero .hero-content {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-top: 2.5em;
+  }
+  #hero .heroText {
+    max-width: 30em;
+    margin: auto;
+    margin-top: 5.3em;
+    text-align: center;
+  }
+  #hero .heroText h2 {
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 2.22222222em;
+    font-family: "Barlow", sans-serif;
+  }
+  #hero .heroText h2 .bold {
+    font-weight: bold;
+    color: var(--primary);
+  }
+  #hero .heroText button {
+    width: 100%;
+    height: 3.05555556em;
+    max-width: 16.66666667em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  #hero .heroText a {
+    display: block;
+    margin: auto;
+  }
+  #hero .heroText .button-solid {
+    margin-bottom: 0.55555556em;
+    margin-top: 1.66666667em;
+    width: auto;
+    display: inline-block;
+  }
+  #hero .heroText .button-transparent {
+    border: none;
+  }
+  #hero #home-h {
+    color: #fff;
+    font-size: 2.9em;
+    line-height: 1.20689655em;
+    width: 100%;
+    margin-bottom: 0.17241379em;
+    text-align: center;
+    margin-bottom: 0.51724138em;
+    font-family: 'Russo';
+  }
+  #hero #home-h span {
+    color: d#fff;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .heroText {
+    margin-top: 4em;
+  }
+  #home-h {
+    font-size: 2.9em;
+    line-height: 1.20689655em;
+    font-weight: normal;
+  }
+  .heroText h2 {
+    font-size: 0.9em;
+    line-height: 1.33333333em;
+    font-weight: normal;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #hero {
+    padding-bottom: 15em;
+    background: url("/images/contact.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #hero:before {
+    width: 150em;
+    bottom: -6em;
+  }
+  .heroText {
+    margin-top: 10em;
+    max-width: 28.5em;
+  }
+  #home-h {
+    font-size: 2.9em;
+    line-height: 1.20689655em;
+  }
+  .heroText h2 {
+    width: 25em;
+    margin: auto;
+    margin-bottom: 2.5em;
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .active-menu {
+    border-bottom: 0.25em solid var(--primary);
+  }
+  #hero {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5em;
+    padding-bottom: 20em;
+    height: auto;
+    position: relative;
+    background-attachment: fixed;
+  }
+  #hero:before {
+    bottom: -6.6em;
+  }
+  #hero .container {
+    width: 96%;
+    padding: 0;
+    max-width: 55em;
+  }
+  .heroText {
+    margin-top: 15.5em;
+    width: 100%;
+    max-width: 48em;
+  }
+  #home-h {
+    margin-bottom: 0.72413793em;
+  }
+  .heroText h2 {
+    width: 100%;
+    max-width: 30.5em;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #hero {
+    padding-bottom: 20em;
+    height: auto;
+  }
+  .hero-content {
+    margin-top: 0;
+  }
+  .white-clip,
+  .red-clip {
+    display: block;
+    position: absolute;
+    bottom: -9.35em;
+    width: 100%;
+    left: 0;
+    height: 20em;
+  }
+  .white-clip {
+    -webkit-clip-path: polygon(0 60.5%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 60.5%, 100% 0, 100% 100%, 0% 100%);
+    background: #fff;
+    z-index: 11;
+    bottom: -9.35em;
+  }
+  body.dark-mode .white-clip {
+    background: var(--dark);
+  }
+  body.dark-mode #hero:before {
+    border-top: 5em solid var(--primary) !important;
+  }
+}
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+@media only screen and (min-width: 0em) {
+  #services {
+    position: relative;
+    padding-top: 5em;
+    z-index: 100;
+  }
+  #services .container {
+    margin-top: -18.5em;
+  }
+  #services .services {
+    margin-top: 2.5em;
+  }
+  #services .services img {
+    width: 4em;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 2.15em;
+  }
+  #services .card {
+    -webkit-box-shadow: 0px 0.5em 2em rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0.5em 2em rgba(0, 0, 0, 0.1);
+    padding: 2.5em 0;
+    margin-bottom: 1.25em;
+  }
+  #services .card:nth-child(2) {
+    background: linear-gradient(225deg, #525252 0%, #0c0c0c 100%);
+    position: relative;
+    z-index: 1;
+  }
+  #services .card:nth-child(2) h3,
+  #services .card:nth-child(2) span,
+  #services .card:nth-child(2) li {
+    color: #fff;
+  }
+  #services .card:nth-child(2) .button-solid {
+    background: #fff;
+    color: var(--primary);
+  }
+  #services .card:nth-child(2) .button-solid:before {
+    border: 0.11111111em solid #ffffff;
+  }
+  #services h3,
+  #services span {
+    font-size: 1.2em;
+    line-height: 1.16666667;
+    font-weight: 700;
+    display: block;
+  }
+  #services h3 {
+    margin-bottom: 1.16666667em;
+    font-family: 'BarlowBold';
+  }
+  #services ul {
+    padding: 0;
+    margin-bottom: 2.5em;
+  }
+  #services ul li {
+    font-size: 0.8em;
+    line-height: 1.1875;
+    margin-bottom: 0.9375em;
+    list-style: none;
+  }
+  .standard {
+    text-align: center;
+  }
+  .standard .sub {
+    color: var(--primary);
+    font-size: 20px;
+    line-height: 1.45em;
+    font-family: 'BarlowBold';
+    display: block;
+    margin-bottom: 0.85em;
+  }
+  .standard .aria-tag {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: -100;
+  }
+  .standard h2 {
+    font-size: 1.6em;
+    line-height: 1.25em;
+    margin-bottom: 1.34375em;
+  }
+  .standard p {
+    margin-bottom: 1.25em;
+  }
+}
+@media only screen and (min-width: 400px) {
+  #services .symbol-group {
+    top: 2.5em;
+  }
+  #services .symbol-group .img1 {
+    right: 40%;
+    top: -10%;
+  }
+  #services .symbol-group .img2 {
+    left: 20%;
+    right: auto;
+    top: -10%;
+  }
+  #services .symbol-group .img3 {
+    left: 78%;
+    top: 30%;
+  }
+  #services .symbol-group .img4 {
+    right: 15%;
+    left: auto;
+    top: -14%;
+  }
+  #services .symbol-group .img5 {
+    display: none;
+  }
+  #services .symbol-group .img6 {
+    display: none;
+  }
+  #services .symbol-group .img7 {
+    left: 5.55em;
+    top: -1.45em;
+    display: none;
+  }
+  #services .symbol-group .img8 {
+    left: 15%;
+    bottom: 90%;
+    display: none;
+  }
+  #services .symbol-group .img9 {
+    left: 25%;
+    right: auto;
+    bottom: 39%;
+  }
+  #services .symbol-group .img10 {
+    left: 79%;
+    top: 29%;
+    display: none;
+  }
+  #services .symbol-group .img11 {
+    right: 14%;
+    bottom: 1%;
+  }
+  #services .symbol-group .img12 {
+    left: 8%;
+    bottom: 40%;
+  }
+  #services .symbol-group .img13 {
+    right: 59%;
+    top: 10%;
+  }
+  #services .symbol-group .img14 {
+    left: 1%;
+    top: -26%;
+  }
+  #services .symbol-group .img15 {
+    left: 2%;
+    bottom: -5%;
+  }
+  #services .symbol-group .img16 {
+    right: 0%;
+    left: auto;
+    top: 20%;
+  }
+  #services .symbol-group .img17,
+  #services .symbol-group .img18 {
+    display: block;
+  }
+  #services .symbol-group .img17 {
+    right: 5%;
+    top: -35%;
+    display: none;
+  }
+  #services .symbol-group .img18 {
+    right: 30%;
+    top: 30%;
+  }
+}
+@media only screen and (min-width: 568px) {
+  #services .services {
+    max-width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 48em) {
+  #services {
+    max-width: 100%;
+    padding-top: 7.5em;
+  }
+  #services .symbol-group {
+    top: 4em;
+  }
+  #services .container {
+    max-width: 27.4em;
+  }
+  #services .services {
+    max-width: 27.4em;
+  }
+  #services .card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 64em) {
+  #services {
+    padding-top: 9em;
+  }
+  #services .container {
+    max-width: 100%;
+    margin-top: -25em;
+  }
+  #services h2 {
+    width: 14.58333333em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.4em;
+    line-height: 1.16666667em;
+    margin-bottom: 0.89583333em;
+  }
+  #services p {
+    width: 38.125em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #services .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 4.3em;
+  }
+  #services .card:nth-of-type(1),
+  #services .card:nth-of-type(3) {
+    height: 31.5em;
+    margin-top: 2.5em;
+    width: 15em;
+    display: block !important;
+  }
+  #services .card:nth-of-type(2) {
+    width: 20em;
+  }
+  #services .card:nth-child(2) .button-solid:hover {
+    background: var(--primary);
+    color: #fff;
+  }
+  #services .card:nth-child(2) .button-solid:hover:before {
+    border: 0.1em solid var(--primary);
+  }
+}
+@media only screen and (min-width: 1300px) {
+  #services .card {
+    padding-top: 3.35em;
+  }
+  #services .card:nth-of-type(1),
+  #services .card:nth-of-type(3) {
+    width: 20em;
+    height: 33.15em;
+    margin-top: 4.45em;
+  }
+  #services .card:nth-of-type(2) {
+    width: 22em;
+    height: 42em;
+  }
+  #services ul li {
+    margin-bottom: 1.0625em;
+  }
+}

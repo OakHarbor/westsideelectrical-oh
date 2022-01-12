@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="canonical" href="">
-
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -27,9 +25,14 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/core-styles.css">
-    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/services.css">
     <link rel="stylesheet" href="/css/dark.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 
     <script type="text/javascript">
 
@@ -45,7 +48,7 @@
       
       </script>
 
-    <title>Whidbey Island Electrician | Westside Electrical | Oak Harbor, WA</title>
+    <title>Whidbey Island Electrician | Westside Eelctric | Oak Harbor, WA</title>
 </head>
 <body>
 
@@ -81,8 +84,8 @@
                     <a class="logo" href="/index.html"><img aria-hidden="true" src="/images/logo-white-red-bolt.svg" alt="compnay logo" height="80"></a>
                     <ul id="on-top" class="navbar-links">
                         <li class="nav-li hover-link"><a href="/index.html">Home</a></li>
-                        <li class="nav-li hover-link"><a class="active-menu" href="/html/about.html">About</a></li>
-                        <li class="nav-li hover-link"><a href="/html/services.html">Services</a></li>
+                        <li class="nav-li hover-link"><a href="/html/about.html">About</a></li>
+                        <li class="nav-li hover-link"><a class="active-menu" href="/html/services.html">Services</a></li>
                         <!-- <li class="nav-li"><a href="html/portfolio.html">Portfolio</a></li>-->
                         <li class="nav-li"><a href="/html/testimonials.html">Testimonials</a></li>
                         <li class="nav-li"><a class="contact-button" href="/html/contact.html">Contact</a></li>
@@ -93,8 +96,8 @@
     </header>
         
     <main id="main">
-    
-        <!-- ============================================ -->
+
+         <!-- ============================================ -->
         <!--                    LANDING                   -->
         <!-- ============================================ -->
     
@@ -102,8 +105,11 @@
             <div aria-hidden="true" id="dark"></div>
             <div class="container hero-content">
                 <div class="heroText">
-                    <h1 id="home-h">See Our Electrical Work Around Oak Harbor</h1>
-                    <h2>Westside Electrical has been providing exceptional customer service and workmanshipwith nearly a decade of experience in the field.  Here’s some of our work to see what we can do.</h2>
+                    <h1 id="home-h" class="ABfont">Electrical Services</h1>
+                    <h2>Westside Electrical has been operating in Oak Harbor since 2013 performing all types of electrcial services around homes and buisnesses.  </h2>
+                    <a aria-label="click for instant quote" class="button-solid" href="/html/contact.html" target="_blank">
+                        Instant Quote
+                    </a>
                 </div>
             </div>
             <div aria-hidden="true" class="white-clip"></div>
@@ -111,18 +117,66 @@
         </section>
 
         <!-- ============================================ -->
-        <!--                  Portfolio                   -->
+        <!--                  Services                    -->
         <!-- ============================================ -->
-    
-        <section id="portfolio-page">
-            <div id="grid">
-                <div role="img" class="grid item1"></div>
-                <div role="img" class="grid item2"></div>
-                <div role="img" class="grid item3"></div>
-                <div role="img" class="grid item4"></div>
-                <div role="img" class="grid item5"></div>
-                <div role="img" class="grid item6"></div>
-                <div role="img" class="grid item7"></div>
+
+        <section id="services" class="standard">
+            <div class="container">
+                <div class="services">
+                    <div class="card">
+                        <img loading="lazy" aria-hidden="true" src="/images/power.svg" alt=""  width="80" height="80" decoding="async">
+                        <h3><span>Commercial</span> Electrical Services</h3>
+                        <ul>
+                            <li>Install Thermostats</li>
+                            <li>Dedicated Circuit Installations</li>
+                            <li>Low Voltage Wiring</li>
+                            <li>High Voltage Conversions</li>
+                            <li>Emergency Electrical Repairs</li>
+                            <li>Backup Power</li>
+                            <li>Surge Protection</li>
+                        </ul>
+                        <a aria-label="click to Call Now about commercial electrical services" class="button-solid" href="/html/contact.html">
+                            Call Now
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <img loading="lazy" aria-hidden="true" src="/images/power-dark.svg" alt=""  width="50" height="50" decoding="async">
+                        <h3><span>Residenital</span> Electrical Services</h3>
+                        <ul>
+                            <li>Emergency Service Calls</li>
+                            <li>New Construction Wiring</li>
+                            <li>Remodel Wiring</li>
+                            <li>Home Service Calls</li>
+                            <li>Fuse panel Replacement</li>
+                            <li>Light Fixture Installations</li>
+                            <li>Outdoor Lighting Installation</li>
+                            <li>Outdoor wiring</li>
+                            <li>Kitchen Electrical Upgrades</li>
+                            <li>Remodel Electrical Upgrades</li>
+                        </ul>
+                        <a aria-label="click to Call Now about commercial electrical services" class="button-solid" href="/html//contact.html">
+                            Call Now
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <img loading="lazy" aria-hidden="true" src="/images/power.svg" alt=""  width="50" height="50">
+                        <h3><span>New Construction</span> Electrical Services</h3>
+                        <ul>
+                            <li>Low voltage cabling</li>
+                            <li>Surveillance/security systems</li>
+                            <li>Electrical distribution systems</li>
+                            <li>Generators</li>
+                            <li>Lighting/dimming systems</li>
+                            <li>Switches and outlets</li>
+                            <li>HVAC control</li>
+                        </ul>
+                        <a aria-label="click to Call Now about commercial electrical services" class="button-solid" href="/html/contact.html">
+                            Call Now
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -138,10 +192,10 @@
         </div>
         <div class="container">
             <ul>
-                <li><a href="/html/about.html">About</a></li>
-                <li><a href="/index.html#services">Services</a></li>
-                <li><a href="/html/testimonials.html">Testimonials</a></li>
-                <li><a href="/html/contact.html">Contact</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
             <div class="content">
                 <div class="item">
